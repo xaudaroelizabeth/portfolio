@@ -1,19 +1,66 @@
-# Getting Started
-Install the dependencies and run the project
-```
+## 💼 Developer Portfolio
+
+A full-featured portfolio website for a frontend developer, built with React 18, React Router DOM for client-side navigation, and Vite for optimized builds. The site showcases projects through dynamic routing and individual project pages, with a focus on performance, responsiveness, and clean UI design.
+
+---
+
+## ✨ Features
+
+Responsive design for all screen sizes
+Hamburger menu navigation for mobile users
+Dynamic project portfolio with individual project pages
+Smooth single-page application (SPA) navigation
+Clean, modern UI with reusable components
+Fast development and optimized production build using Vite
+
+---
+
+## 🛠️ Built With
+
+React 18
+React Router DOM
+Vite
+JavaScript (ES6+)
+CSS
+
+---
+
+## 🚀 Getting Started
+
+Install dependencies and start the development server:
+
+```bash
 npm install
-npm start
+npm run dev
 ```
 
-Head over to https://vitejs.dev/ to learn more about configuring vite
-## About Scrimba
+Once the server is running, open your browser and navigate to:
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Fullstack Developer Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
+```text
+http://localhost:5173
+```
 
-- [Our courses](https://scrimba.com/courses)
-- [The Frontend Career Path](https://scrimba.com/fullstack-path-c0fullstack)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+---
 
-Happy Coding!
+## 📦 Build for Production
+
+```bash
+npm run build
+```
+
+---
+
+## 🌐 Deployment
+
+This project can be deployed using Netlify.
+
+---
+
+## 📸 Preview
+
+<img width="1239" height="905" alt="image" src="https://github.com/user-attachments/assets/0492f603-a796-4792-afb1-909255158d4e" />
+<img width="1267" height="859" alt="image" src="https://github.com/user-attachments/assets/440b7774-c32a-4c52-8b47-339252ce147c" />
+
+## 📄 License
+
+This project is for educational and portfolio purposes.
