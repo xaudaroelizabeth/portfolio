@@ -1,3 +1,5 @@
+import introimg from "../../img/dev-jane-01.jpg";
+
 export default function Intro() {
   return (
     <section className="intro" id="home">
@@ -8,7 +10,7 @@ export default function Intro() {
         Front-End Developer
       </p>
       <img
-        src="img/dev-jane-01.jpg"
+        src={introimg}
         alt="Elizabeth Xaudaró smiling"
         className="intro__img"
       />

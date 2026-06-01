@@ -1,20 +1,26 @@
 import { Link } from "react-router-dom";
+import twimbaimg from "../../img/twimba.png";
+import tenziesimg from "../../img/tenzies.jpg";
+import passwordGeneratorImg from "../../img/password-generator.jpg";
+import memeGeneratorImg from "../../img/meme-generator.jpg";
+import personalDashboardImg from "../../img/personal-dashboard.png";
+import vanlifeImg from "../../img/vanlife.jpg";
 
 const portfolioItems = [
-  { id: 1, image: "img/twimba.png", alt: "Twimba project" },
-  { id: 2, image: "img/tenzies.jpg", alt: "Tenzies project" },
+  { id: 1, image: twimbaimg, alt: "Twimba project" },
+  { id: 2, image: tenziesimg, alt: "Tenzies project" },
   {
     id: 3,
-    image: "img/password-generator.jpg",
+    image: passwordGeneratorImg,
     alt: "Password Generator project",
   },
-  { id: 4, image: "img/meme-generator.jpg", alt: "Meme Generator project" },
+  { id: 4, image: memeGeneratorImg, alt: "Meme Generator project" },
   {
     id: 5,
-    image: "img/personal-dashboard.png",
+    image: personalDashboardImg,
     alt: "Personal Dashboard project",
   },
-  { id: 6, image: "img/vanlife.jpg", alt: "Van Life project" },
+  { id: 6, image: vanlifeImg, alt: "Van Life project" },
 ];
 
 export default function Portfolio() {

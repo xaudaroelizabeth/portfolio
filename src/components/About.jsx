@@ -1,3 +1,4 @@
+import whoIamimg from "../../img/dev-jane-02.jpg";
 export default function About() {
   return (
     <section className="about-me" id="about">
@@ -20,7 +21,7 @@ export default function About() {
       </div>
 
       <img
-        src="img/dev-jane-02.jpg"
+        src={whoIamimg}
         alt="Elizabeth leaning against a bus"
         className="about-me__img"
       />
