@@ -105,6 +105,7 @@ h3 { font-size: var(--fs-h3) }
 .section__title {
     margin-bottom: .25em;
     align-self: center;
+    white-space: pre-line;
 }
 
 .section__title--intro {
@@ -112,6 +113,7 @@ h3 { font-size: var(--fs-h3) }
 }
 
 .section__title--intro strong {
+    margin-top: .15em;
     display: block;
 }
 
@@ -153,7 +155,6 @@ header {
     text-decoration: none;
     font-size: var(--fs-h3);
 }
-
 .nav {
     position: fixed;
     background: var(--color-dark);
@@ -201,12 +202,12 @@ header {
     z-index: 1000;
 }
 
-.nav-open .nav {
-    transform: translateX(0);
+.nav-active {
+    transform: translateX(0) !important;
 }
 
-.nav-open .nav-toggle {
-    position: fixed;
+.nav-open .nav-active {
+    transform: translateX(0);
 }
 
 .nav-open .hamburger {
@@ -220,11 +221,6 @@ header {
 .nav-open .hamburger::after {
     opacity: 0;
 }
-
-
-
-
-
 
 .hamburger {
     display: block;
@@ -241,7 +237,6 @@ header {
     transition: transform 250ms ease-in-out;
 }
 
-
 .hamburger::before,
 .hamburger::after {
     content: '';
@@ -253,7 +248,6 @@ header {
 .hamburger::before { top: 6px; }
 .hamburger::after { bottom: 6px; }
 
-
 /*  Intro section  */
 
 .intro {
@@ -262,6 +256,7 @@ header {
 
 .intro__img {
     box-shadow: var(--bs);
+    height: 300px;
 }
 
 .section__subtitle--intro {
@@ -283,7 +278,8 @@ header {
     
     .intro__img {
         grid-area: img;
-        min-width: 250px;
+        min-width: 300px;
+        height: 300px;
         position: relative;
         z-index: 2;
     }    
@@ -299,15 +295,12 @@ header {
     }
 }
 
-
-
 /*  My services section  */
 
 .my-services {
     background-color: var(--color-dark);
     background-image: url(../img/services-bg7.jpg);
     background-size: cover;
-    /* background-blend-mode: normal; */
     color: var(--color-light);
     text-align: center;
 }
@@ -352,7 +345,6 @@ header {
         margin-bottom: 0;
     }
 }
-
 
 .about-me {
     max-width: 1000px;
@@ -414,7 +406,6 @@ header {
 .portfolio__item {
     background: var(--color-accent);
     overflow: hidden;
-
 }
 
 .portfolio__img {
@@ -436,7 +427,6 @@ header {
     opacity: .5;
 }
 
-
 /* footer */
 
 .footer {
@@ -445,7 +435,6 @@ header {
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
-
 }
 
 .footer a { 
@@ -482,7 +471,6 @@ header {
     padding: .5em;
 }
 
-
 /* Individual portfolio item styles */
 
 .portfolio-intro {
@@ -515,5 +503,4 @@ header {
     color: var(--color-dark);
     padding: 0.25em 1em;
     text-decoration: none;
-
 }
