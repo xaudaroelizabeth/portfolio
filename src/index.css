@@ -143,6 +143,8 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 1em;
+    align-items: center;
+
 }
 
 .logo {
@@ -196,7 +198,7 @@ header {
     background: transparent;
     border: 0;
     cursor: pointer;
-    position: absolute;
+    position: static;
     right: 1em;
     top: 1em;
     z-index: 1000;
@@ -256,7 +258,10 @@ header {
 
 .intro__img {
     box-shadow: var(--bs);
-    height: 300px;
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .section__subtitle--intro {
@@ -278,8 +283,8 @@ header {
     
     .intro__img {
         grid-area: img;
-        min-width: 300px;
-        height: 300px;
+        min-width: 350px;
+        height: auto;
         position: relative;
         z-index: 2;
     }    
@@ -353,6 +358,9 @@ header {
 
 .about-me__img {
     box-shadow: var(--bs);
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 @media (min-width: 600px) {
@@ -384,6 +392,8 @@ header {
         grid-area: img;
         position: relative;
         z-index: 2;
+        min-width: 300px;
+        height: auto;
     }
 }
 

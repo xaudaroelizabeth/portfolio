@@ -1,4 +1,4 @@
-import introimg from "../../img/dev-jane-01.jpg";
+import introimg from "../../img/linkedin-picturecopy.png";
 
 export default function Intro() {
   return (
@@ -9,6 +9,7 @@ export default function Intro() {
       <p className="section__subtitle section__subtitle--intro">
         Front-End Developer
       </p>
+
       <img
         src={introimg}
         alt="Elizabeth Xaudaró smiling"

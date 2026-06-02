@@ -1,4 +1,4 @@
-import whoIamimg from "../../img/dev-jane-02.jpg";
+import whoIamimg from "../../img/linkedin-picture2.png";
 export default function About() {
   return (
     <section className="about-me" id="about">

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 export default function Services() {
   return (
@@ -25,9 +25,9 @@ export default function Services() {
         </div>
       </div>
 
-      <Link to="/#work" className="btn">
+      <HashLink smooth to="/#work" className="btn">
         My Projects
-      </Link>
+      </HashLink>
     </section>
   );
 }

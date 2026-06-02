@@ -8,7 +8,7 @@ export default function Footer() {
       </a>
       <ul className="social-list">
         <li className="social-list__item">
-          <HashLink className="social-list__link" to="/#home">
+          <HashLink className="social-list__link" smooth to="/#home">
             <i className="fas fa-home"></i>
           </HashLink>
         </li>
