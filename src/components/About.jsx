@@ -8,23 +8,24 @@ export default function About() {
       </p>
 
       <div className="about-me__body">
-        <p>
-          I'm a web developer and designer based out of San Antonio, Texas. I
-          love building apps that solve real-world problems, and that are
-          delightful to use. My specialities include React JS, Tailwind CSS, and
-          Styled Components.
-        </p>
-        <p>
-          My background is in real estate, sales, and marketing. I also have one
-          adorable dog.
-        </p>
+        <div>
+          <p>
+            I'm a web developer and designer based out of San Antonio, Texas. I
+            love building apps that solve real-world problems, and that are
+            delightful to use. My specialities include React JS, Tailwind CSS,
+            and Styled Components.
+          </p>
+          <p>
+            My background is in real estate, sales, and marketing. I also have
+            one adorable dog.
+          </p>
+        </div>
+        <img
+          src={whoIamimg}
+          alt="Elizabeth leaning against a bus"
+          className="about-me__img"
+        />
       </div>
-
-      <img
-        src={whoIamimg}
-        alt="Elizabeth leaning against a bus"
-        className="about-me__img"
-      />
     </section>
   );
 }

@@ -127,8 +127,12 @@ h3 { font-size: var(--fs-h3) }
     background: var(--color-accent);
     padding: .25em 1em;
     font-family: var(--ff-secondary);
-    margin-bottom: 1em;
+    margin-bottom: .5em;
     color: var(--color-light);
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: break-word;
+
 }
 
 .section__subtitle--work {
@@ -269,16 +273,17 @@ header {
     color: var(--color-light);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
     .intro {
+        max-width: 1200px;
         display: grid;
-        width: min-content;
+        width: 100%;
         margin: 0 auto;
         grid-column-gap: 1em;
         grid-template-areas: 
             "img title"
             "img subtitle";
-        grid-template-columns: min-content max-content;
+        grid-template-columns: min-content 1fr;
     }
     
     .intro__img {
@@ -295,7 +300,7 @@ header {
         grid-row: 2;
         text-align: right;
         position: relative;
-        left: -1.5em;
+        left: 0;
         width: calc(100% + 1.5em);
     }
 }
@@ -350,52 +355,73 @@ header {
         margin-bottom: 0;
     }
 }
+/* About Me */
 
 .about-me {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
+}
+
+.about-me__body {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
 }
 
 .about-me__img {
     box-shadow: var(--bs);
     width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
     height: auto;
     display: block;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1000px) {
+
     .about-me {
         display: grid;
-        grid-template-columns: 1fr 200px;
-        grid-template-areas: 
-            "title img"
-            "subtitle img"
-            "text img";
-        grid-column-gap: 2em;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "title"
+            "subtitle"
+            "text";
     }
-    
+
     .section__title--about {
         grid-area: title;
     }
-    
+
     .section__subtitle--about {
         grid-column: 1 / -1;
         grid-row: 2;
         position: relative;
-        left: -1em;
+      
         width: calc(100% + 2em);
         padding-left: 1em;
-        padding-right: calc(200px + 4em);
+        background: var(--color-accent);
+        color: var(--color-light);
     }
-    
+
+    .about-me__body {
+        
+       
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .about-me__body > div {
+        flex: 1;
+    }
+
     .about-me__img {
-        grid-area: img;
+        margin-top: -150px;
+        width: 300px;
+        flex-shrink: 0;
         position: relative;
-        z-index: 2;
-        min-width: 300px;
-        height: auto;
     }
 }
+
 
 /* My Work */
 
