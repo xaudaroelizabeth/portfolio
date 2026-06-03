@@ -4,6 +4,7 @@ import Layout from "./components/Layout";
 import Home from "./components/Home";
 import PortfolioItem from "./components/PortfolioItem";
 import NotFound from "./components/NotFound";
+import ScrollToTop from "./components/ScrollToTop";
 import "./index.css";
 
 export default function App() {
@@ -19,6 +20,8 @@ export default function App() {
 
   return (
     <Router>
+      <ScrollToTop />
+
       <Routes>
         <Route
           path="/"

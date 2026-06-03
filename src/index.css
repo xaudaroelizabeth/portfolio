@@ -396,7 +396,6 @@ header {
         grid-column: 1 / -1;
         grid-row: 2;
         position: relative;
-      
         width: calc(100% + 2em);
         padding-left: 1em;
         background: var(--color-accent);
@@ -404,8 +403,6 @@ header {
     }
 
     .about-me__body {
-        
-       
         flex-direction: row;
         align-items: flex-start;
     }
@@ -510,7 +507,13 @@ header {
 /* Individual portfolio item styles */
 
 .portfolio-intro {
-    padding: 5em 2em 2em 2em;
+    padding: 4em 2em 2em 2em;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column; 
 }
 
 .portfolio-item-individual {
@@ -528,8 +531,9 @@ header {
 .portfolio-item-individual div {
     display: flex;
     max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 1em;
 }
 
 .portfolio-item-individual a {
@@ -539,4 +543,20 @@ header {
     color: var(--color-dark);
     padding: 0.25em 1em;
     text-decoration: none;
+}
+
+.portfolio-intro.intro__img {
+    width: 50%;
+    max-width: 200px;
+    display:block;
+
+}
+
+@media (min-width: 800px) {
+    .portfolio-intro {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: flex-start;
+    
+        }
 }

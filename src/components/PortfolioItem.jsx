@@ -79,25 +79,29 @@ export default function PortfolioItem() {
 
   return (
     <>
-      <section class="intro portfolio-intro">
-        <h1 class="section__title section__title--intro">
+      <section className="intro portfolio-intro">
+        <h1 className="section__title section__title--intro">
           {portfolio.title}
           <strong>web app</strong>
         </h1>
-        <p class="section__subtitle section__subtitle--intro">
+        <p className="section__subtitle section__subtitle--intro">
           {portfolio.description}
         </p>
-        <img src={portfolio.image} alt={portfolio.title} class="intro__img" />
+        <img
+          src={portfolio.image}
+          alt={portfolio.title}
+          className="intro__img"
+        />
       </section>
 
-      <div class="portfolio-item-individual">
+      <div className="portfolio-item-individual">
         <div>
-          <a class="" target="_blank" href={portfolio.github}>
-            <i class="fab fa-github"></i> View Code
+          <a className="" target="_blank" href={portfolio.github}>
+            <i className="fab fa-github"></i> View Code
           </a>
           {portfolio.liveSite && (
-            <a class="" target="_blank" href={portfolio.liveSite}>
-              <i class="fas fa-eye"></i> Live version{" "}
+            <a className="" target="_blank" href={portfolio.liveSite}>
+              <i className="fas fa-eye"></i> Live version{" "}
             </a>
           )}
         </div>
